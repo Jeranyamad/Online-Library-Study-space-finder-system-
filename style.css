@@ -38,3 +38,44 @@ p {
     text-decoration: none;
     border-radius: 5px;
 }
+
+header {
+    background-color: #2962ff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.request-section, .availability-section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button {
+    background-color: #2962ff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0039cb;
+}

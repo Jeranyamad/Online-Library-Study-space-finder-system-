@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Spaces Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Online Spaces Finder</h1>
+    </header>
+
+    <div class="request-section">
+        <h2>Make a Reservation</h2>
+        <!-- Form for making reservation requests -->
+        <form id="reservation-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="time">Select Time:</label>
+            <input type="time" id="time" name="time" required>
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+
+    <div class="availability-section">
+        <h2>Current Availability</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Slot</th>
+                    <th>Person</th>
+                    <th>Time Leaving</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data for current slots with people in the library -->
+                <tr>
+                    <td>Slot 1</td>
+                    <td>John Doe</td>
+                    <td>12:00 PM</td>
+                    <td><button>Book Now</button></td>
+                </tr>
+                <tr>
+                    <td>Slot 2</td>
+                    <td>Jane Smith</td>
+                    <td>1:30 PM</td>
+                    <td><button>Book Now</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; WUA 2024 Online Library Study Spaces Finder. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
