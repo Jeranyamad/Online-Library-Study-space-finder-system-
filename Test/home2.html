@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation Booking System</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-4">
+  <div class="max-w-md mx-auto bg-white p-6 rounded-md shadow-md">
+    <h1 class="text-2xl font-semibold mb-4">Reservation Booking System</h1>
+    <form id="reservationForm">
+      <div class="mb-4">
+        <label for="clientId" class="block text-sm font-medium text-gray-700">Client ID</label>
+        <input type="text" id="clientId" name="clientId" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+      </div>
+      <div class="mb-4">
+        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+        <input type="text" id="name" name="name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+      </div>
+      <div class="mb-4">
+        <label for="time" class="block text-sm font-medium text-gray-700">Time</label>
+        <select id="time" name="time" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+          <option value="08:00">08:00</option>
+          <option value="12:00">12:00</option>
+          <option value="18:00">18:00</option>
+        </select>
+      </div>
+      <div class="mb-4">
+        <label for="table" class="block text-sm font-medium text-gray-700">Table</label>
+        <select id="table" name="table" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+          <!-- Options will be added dynamically -->
+        </select>
+      </div>
+      <button type="submit" class="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Book</button>
+    </form>
+    <div id="bookedTables" class="mt-4">
+      <h2 class="text-lg font-semibold mb-2">Booked Tables</h2>
+      <table class="min-w-full">
+        <thead>
+          <tr>
+            <th class="px-4 py-2">Time</th>
+            <th class="px-4 py-2">Client ID</th>
+            <th class="px-4 py-2">Name</th>
+            <th class="px-4 py-2">Table</th>
+            <th class="px-4 py-2">Cancel</th>
+          </tr>
+        </thead>
+        <tbody id="bookedList">
+          <!-- Booked tables will be displayed here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
